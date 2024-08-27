@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*body::-webkit-scrollbar {
+    width: 1vw;
+}
+body::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #161616;
+    border-radius: 5px;
+}*/
+
+
+
+.body{
+    overflow-x:hidden;
+    min-width:100vw;
+    height:100vh;
+    background-color: #0D0D0D;
+}
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    cursor: pointer;
+}
+#titulo{
+    color:#ffff2f;
+    font-size: 55px;
+    font-weight: bold;
+}
+#titulo2{
+    color:#ffff2f;
+    font-size: 25px;
+    font-weight: bold;
+}
+.bg1{
+    background-color:  #161616;
+}
+.bg2{
+    background-color: #313131;
+}
+.bg3{
+    background-color: white;
+}
+.bg4{
+    background-color: #0D0D0D;
+}
+.bg5{
+    background-color: #FFFFC0;
+}
+.hover:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 300ms;
+    transform: scale(0.95);
+}
+.hover2:hover{
+    opacity: 0.9;
+    transition: 300ms;
+}
+.imgFundo{
+    position: absolute;
+    width:4.5rem;
+}
+.botao{
+    background: none;
+    border:none;
+    outline: none;
+}
+
+
+#voltar{
+    position: absolute;
+    width:4rem;
+    left:5%;
+}
+
+
+#mascara{
+    width:100vw;
+    height:100vh;
+    z-index: 990;
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0,80%);
+    display:none;
+    cursor: pointer;
+}
+#porta{
+    width:100vw;
+    z-index: 991;
+    position: fixed;
+    top:0;
+    display:none;
+}
+header{
+    position: fixed;
+    width:100vw;
+    top:0;
+    z-index: 800;
+}
+#salas{
+    min-height: 100vh;
+    margin-top: 7rem;
+}
+#sala:hover{
+    cursor: pointer;
+    opacity: 0.90;
+    z-index: 700;
+}
+
+
+
+#mensagens{
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+}
+#texto{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 999;
+}
+#dia{
+    border:1px #BBBBBB solid;
+    color:#BBBBBB;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.ponta{
+    height:100%;
+    width:100%;
+    position: absolute;
+    left:0;
+    margin-left: -4rem;
+}
+.suportePonta{
+    border-top-right-radius: 30px;
+}
+.msg{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: -4rem;
+}
+
+.ponta2{
+    height:100%;
+    width:100%;
+    position: absolute;
+    right:0;
+    margin-right: -4rem;
+}
+.suportePonta2{
+    border-top-left-radius: 30px;
+}
+.msg2{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: -4rem;
+}
