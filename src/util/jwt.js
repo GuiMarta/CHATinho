@@ -1,32 +1,29 @@
 const jwt = require('jsonwebtoken');
+//codigo do token:
 
 async function checkToken (token, id, key){
     return jwt.verify(token, key, (err, decoded) => {
-        let autorizacao = false;
+        let auth = false;
         if(err){
-            autorizacao = false;
+            auth = false;
         }
         if(decoded){
             if(decoded.id == id){
-                autorizacao = true;
+                auth = true;
             }
             else{
-                autorizacao = false;
+                auth = false;
             }
         }
-        return autorizacao;
+        return auth;
     }
 )};
 
 async function setToken (id, key) {
     console.log("id: "+id);
     if(id){
-        return jwt.sign({id}, key, {expiresIn: 28800});
+        return jwt.sign({id}, key, {expiresIn: 50000});
     }
     return false;
 }
-
-module.exports = {
-    checkToken,
-    setToken
-}
+module.exports = {checkToken,setToken}

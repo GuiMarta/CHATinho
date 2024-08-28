@@ -1,29 +1,23 @@
 {
   "name": "chat",
   "version": "1.0.0",
-  "description": "Chat API",
+  "description": "API do chat",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js",
+    "start": "node ./servidor/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelipeAlvesGarcia/Chat.git"
+    "url": "git+https://github.com/Ryzen720/CHATinho.git"
   },
   "keywords": [
-    "api",
     "chat",
-    "mongo",
-    "node",
-    "farchat"
+    "api",
+    ""
   ],
-  "author": "Felipe Alves Garcia",
+  "author": "Guilherme Marta",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FelipeAlvesGarcia/Chat/issues"
-  },
-  "homepage": "https://github.com/FelipeAlvesGarcia/Chat#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",

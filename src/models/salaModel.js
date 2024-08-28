@@ -1,8 +1,8 @@
-const db = require("./db");
+const db = require("./MongoConsulta");
 
 let listarSalas = async () =>{
     let salas = await db.findAll("salas");
-    console.log("salas: "+salas);
+    console.log('Requisição de listar salas')
     return salas;
 }
 

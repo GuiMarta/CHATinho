@@ -1,12 +1,11 @@
-const db = require("./db");
+const db = require("./MongoConsulta");
 async function registrarUsuario(nick){
     return await db.insertOne("usuarios",{"nick": nick});
-
 }
 
 let buscarUsuario = async (idUser)=>{
     let user = await db.findOne("usuarios",idUser);
-    //  console.log(user)
+    console.log(user)
     return user;
 }
   
