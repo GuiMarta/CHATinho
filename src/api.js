@@ -14,9 +14,9 @@ app.use('/', router.get('/', (req, res, next) => {
 
 app.use('/', router.get('/sobre', (req, res, next) => {
     res.status(200).send({
-        "nome" : "FARCHAT",
-        "autor" : "Felipe Alves Garcia",
-        "versao" : "0.1.0"
+        "nome" : "chatinhoDoGui",
+        "autor" : "Guilherme Marta",
+        "versao" : "0.1"
     });
 }));
 
