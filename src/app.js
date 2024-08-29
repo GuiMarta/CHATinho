@@ -8,14 +8,18 @@ const router = express.Router();
 
 // ROTAS
 app.use('/', router.get('/', (req, res, next) => {
-    res.status(200).send("API do chatinhoDoGui Online.");
+    res.status(200).send(`
+        <body style="background-color: black; color: white;">
+            API do chatinhoDoGui Online.
+        </body>
+    `);
 }));
 
 app.use('/', router.get('/sobre', (req, res, next) => {
     res.status(200).send({
         "nome": "chatinhoDoGui",
-        "autor": "Guilherme Marta",
-        "versao": "0.1"
+        "versao": "0.1",
+        "autor": "Guilherme Marta"
     });
 }));
 
